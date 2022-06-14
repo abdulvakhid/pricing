@@ -54,7 +54,7 @@ body{
     background-image: url("../images/righttop.svg"), url("../images/leftbottom.svg");
     background-repeat: no-repeat;
 
-    background-position: calc(50% - 623px) calc(50% - -451px), calc(50% + 424px) calc(50% - 70px);
+    background-position: calc(50% - 623px) calc(50% - -451px), calc(50% + 540px) calc(50% - 90px);
     padding-top: 71px;
     padding-bottom: 103px;
     
