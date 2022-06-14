@@ -1,0 +1,309 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+:root{
+    --main-color:#6E728E;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v24-latin-regular.woff2') format('woff2'), 
+    url('../fonts/montserrat-v24-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src:   url('../fonts/montserrat-v24-latin-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v24-latin-700.woff') format('woff'); 
+}
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', "Arial", sans-serif;
+    font-weight: 700;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.hero{
+    background-image: url("../images/righttop.svg"), url("../images/leftbottom.svg");
+    background-repeat: no-repeat;
+
+    background-position: calc(50% - 623px) calc(50% - -451px), calc(50% + 424px) calc(50% - 70px);
+    padding-top: 71px;
+    padding-bottom: 103px;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.title{
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center; 
+    color:var(--main-color);
+}
+
+.hero-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-list-item{
+    /* flex-grow: 1; */
+    width: 350px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 20px 40px #d4d2f480;
+            box-shadow: 0px 20px 40px #d4d2f480;
+    border-radius: 10px 0px 0px 10px;
+    padding: 31px;
+}
+
+.hero-list-item:nth-child(2){
+    
+    padding:55px 31px ;
+    background: -o-linear-gradient(314.94deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+    background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+    -webkit-box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+            box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+}
+
+
+.item-title{
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;  
+    color: #6E728E;
+}
+
+.main{
+    color: #FFFFFF;
+}
+
+
+
+
+
+.about-price{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.symbol{
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    display: inline-block;
+    margin-bottom: 32px;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -1.2px;
+    color: #4A4D60;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+}
+
+.color{
+color: #FFFFFF;
+}
+
+.currency{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 71px;
+    /* identical to box height, or 99% */
+    
+    letter-spacing: -2.16px;
+    
+    color: #4A4D60;
+    
+}
+
+.currency::before{
+display: block;
+content: "$";
+font-size: 40px;
+margin-right: 10px;
+}
+
+
+.color{
+    color: #FFFFFF;
+    }
+    
+
+.info-list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 32px;
+}
+.info-list-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    /* identical to box height, or 187% */
+    
+    text-align: center;
+    
+    color: #6E728E;
+    border-bottom: 1px solid #6E728E;
+}
+
+
+
+
+
+
+.linetop{
+    
+   border-top: 1px solid #6E728E;
+}
+
+.line{
+    border-top: 1px solid #FFFFFF;
+   border-bottom: 1px solid #FFFFFF;
+}
+
+
+.main{
+color: #FFFFFF;
+}
+
+.hero-list-item-link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 14px 66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 1.39286px;
+    
+    color: #FFFFFF;
+    background-color:#696EDD ;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid #6D72DE;
+    border-radius: 6px;
+}
+
+.hero-list-item-link:hover{
+    color:  #6D72DE;
+    background-color:#FFFFFF;
+    border: 1px solid #6D72DE;
+    border-radius: 6px;
+}
+
+
+.active{
+    background: #FFFFFF;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 1.39286px;
+    
+    color: #6D72DE;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+}
+
+.active:hover{
+    color:  #FFFFFF;
+    background-color:transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+}
